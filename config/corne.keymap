@@ -14,14 +14,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬──────╮
-            // │ TAB  │  Q  │  W  │  E  │  R  │  T  │   │  Y  │  U  │  I  │  O  │  P  │ BSPC │
-            // │ CTRL │  A  │  S  │  D  │  F  │  G  │   │  H  │  J  │  K  │  L  │  ;  │  '   │
-            // │ SHFT │  Z  │  X  │  C  │  V  │  B  │   │  N  │  M  │  ,  │  .  │  /  │ ESC  │
-            // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┴─────┴─────┴──────╯
-            //                    │ GUI │ SYM │ SPC │   │ ENT │ NAV │ DEL │
-            //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
-
             bindings = <
 &kp TAB     &kp Q  &kp W  &kp E         &kp R        &kp T      &kp Y          &kp U            &kp I              &kp O    &kp P     &kp BSPC
 &kp LSHIFT  &kp A  &kp S  &kp D         &kp F        &kp G      &kp H          &kp J            &kp K              &kp L    &kp SEMI  &kp SQT
@@ -31,14 +23,6 @@
         };
 
         nav_layer {
-            // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬──────╮
-            // │  `   │  1  │  2  │  3  │  4  │  5  │   │  6  │  7  │  8  │  9  │  0  │ DEL  │
-            // │ CAPS │HOME │ PgDn│ PgUp│ END │     │   │  ←  │  ↓  │  ↑  │  →  │ F12 │      │
-            // │      │ F1  │ F2  │ F3  │ F4  │ F5  │   │ F6  │ F7  │ F8  │ F9  │ F10 │ F11  │
-            // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┴─────┴─────┴──────╯
-            //                    │ GUI │ SYS │ SPC │   │ ENT │ --- │ DEL │
-            //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
-
             bindings = <
 &kp TAB     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5     &kp N6         &kp N7    &kp N8         &kp N9     &kp N0  &kp BACKSPACE
 &kp LSHIFT  &trans  &trans  &trans    &trans  &kp DEL    &kp LEFT       &kp DOWN  &kp UP         &kp RIGHT  &trans  &trans
@@ -48,14 +32,6 @@
         };
 
         sym_layer {
-            // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬──────╮
-            // │  ~   │  !  │  @  │  #  │  $  │  %  │   │  ^  │  &  │  *  │  (  │  )  │ DEL  │
-            // │      │  `  │  {  │  }  │  [  │  ]  │   │  _  │  =  │  <  │  >  │  :  │  |   │
-            // │      │     │  \  │  "  │  '  │ =>  │   │  /  │  ?  │  +  │  -  │  ;  │  ~   │
-            // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┴─────┴─────┴──────╯
-            //                    │ GUI │ --- │ SPC │   │ ENT │ SYS │ DEL │
-            //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
-
             bindings = <
 &kp TILDE  &kp EXCL   &kp AT    &kp HASH       &kp DLLR              &kp PRCNT         &kp CARET        &kp AMPS               &kp ASTRK          &kp LPAR          &kp RPAR  &kp BACKSPACE
 &kp LSHFT  &kp SLASH  &kp PIPE  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp UNDERSCORE    &kp MINUS        &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp LEFT_BRACKET  &trans    &kp LA(GRAVE)
@@ -65,14 +41,6 @@
         };
 
         sys_layer {
-            // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬──────╮
-            // │BTCLR │ BT1 │ BT2 │ BT3 │ BT4 │ BT5 │   │PREV │STOP │ PP  │NEXT │VOL- │ VOL+ │
-            // │      │     │     │     │     │     │   │MUTE │     │     │     │     │      │
-            // │      │     │     │     │     │     │   │     │     │     │     │     │      │
-            // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┴─────┴─────┴──────╯
-            //                    │ GUI │ --- │ SPC │   │ ENT │ --- │ DEL │
-            //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
-
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
